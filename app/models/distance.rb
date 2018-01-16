@@ -17,10 +17,18 @@ class Distance
   end
 
   def latitude_in_radians
-    (change_in_latitude * (Math::PI / 180)).round(9)
+    (change_in_latitude * convert_to_radians).round(9)
   end
 
   def longitude_in_radians
-    (change_in_longitude * (Math::PI / 180)).round(9)
+    (change_in_longitude * convert_to_radians).round(9)
+  end
+
+  def cosine_of_latitude_one
+    (Math.cos(latitude_one * convert_to_radians))
+  end
+
+  def convert_to_radians
+    (Math::PI / 180)
   end
 end
