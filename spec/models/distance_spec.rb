@@ -18,5 +18,9 @@ RSpec.describe Distance do
     it "converts latitude degrees to radians" do
       expect(latitude.latitude_in_radians).to eq(0.082960735)
     end
+
+    it "converts longitude degrees to radians" do
+      expect(longitude.longitude_in_radians).to eq(-4.206348858)
+    end
   end
 end
