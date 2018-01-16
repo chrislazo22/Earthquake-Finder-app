@@ -15,4 +15,8 @@ class Distance
   def change_in_longitude
     (longitude_two - longitude_one).round(7)
   end
+
+  def latitude_in_radians
+    (change_in_latitude * (Math::PI / 180)).round(9)
+  end
 end
