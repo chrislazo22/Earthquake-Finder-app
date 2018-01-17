@@ -24,8 +24,24 @@ class Distance
     (change_in_longitude * convert_to_radians).round(9)
   end
 
+  def sin_of_latitude
+    ((Math.sin(latitude_in_radians / 2) ** 2))
+  end
+
   def cosine_of_latitude_one
     (Math.cos(latitude_one * convert_to_radians))
+  end
+
+  def cosine_of_latitude_two
+    (Math.cos(latitude_two * convert_to_radians))
+  end
+
+  def sin_of_longitude
+    ((Math.sin(longitude_in_radians / 2) ** 2))
+  end
+
+  def haversine_angle
+    sin_of_latitude + (cosine_of_latitude_one * cosine_of_latitude_two * sin_of_longitude)
   end
 
   def convert_to_radians

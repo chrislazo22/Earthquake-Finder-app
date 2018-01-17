@@ -7,3 +7,5 @@
    - change_in_longitude
    - latitude_in_radians
    - longitude_in_radians
+   - cosine_of_latitude_one
+   - cosine_of_latitude_two
