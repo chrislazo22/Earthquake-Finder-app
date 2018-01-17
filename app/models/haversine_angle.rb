@@ -1,4 +1,4 @@
-class Distance
+class HaversineAngle
   attr_accessor :latitude_one, :latitude_two, :longitude_one, :longitude_two
 
   def initialize(args={})
@@ -9,19 +9,19 @@ class Distance
   end
 
   def change_in_latitude
-    (latitude_two - latitude_one).round(7)
+    (latitude_two - latitude_one)
   end
 
   def change_in_longitude
-    (longitude_two - longitude_one).round(7)
+    (longitude_two - longitude_one)
   end
 
   def latitude_in_radians
-    (change_in_latitude * convert_to_radians).round(9)
+    (change_in_latitude * convert_to_radians)
   end
 
   def longitude_in_radians
-    (change_in_longitude * convert_to_radians).round(9)
+    (change_in_longitude * convert_to_radians)
   end
 
   def sin_of_latitude
