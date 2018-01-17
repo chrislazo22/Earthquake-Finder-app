@@ -1,11 +1,11 @@
 require "rails_helper"
 
-RSpec.describe CVariable do
+RSpec.describe AngularDistance do
   let(:angle) { HaversineAngle.new(latitude_one: 34.052200,
                              latitude_two: 38.805500,
                              longitude_one: 118.2437,
-                             longitude_two: -122.7623367) }
-  let(:c_variable) { CVariable.new }
+                             longitude_two: 122.7623367) }
+  let(:angular_distance) { AngularDistance.new }
 
   describe "c varibale" do
     it "calculates the square root of haversine angle" do
@@ -21,9 +21,9 @@ RSpec.describe CVariable do
     it "calculates the c variable" do
       @sqrt_of_hav_angle = Math.sqrt(angle.haversine_angle)
       @sqrt_minus_one = Math.sqrt(1 - angle.haversine_angle)
-      @c_variable = 2 * (Math.atan2(@sqrt_of_hav_angle, @sqrt_minus_one))
+      @angular_distance = 2 * (Math.atan2(@sqrt_of_hav_angle, @sqrt_minus_one))
 
-      expect(angle.c_variable).to eq(@c_variable)
+      expect(angle.angular_distance).to eq(@angular_distance)
     end
   end
 end

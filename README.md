@@ -11,3 +11,6 @@
    - cosine_of_latitude_two
    - haversine angle
    - Design change: Changed the class name to HaversineAngle (was Distance)
+   - added c variable model class with appropriate methods
+   - Using class inheritance, may switch to modules
+   - Added distance model class 

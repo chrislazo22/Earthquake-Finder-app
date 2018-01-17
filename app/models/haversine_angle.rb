@@ -1,4 +1,4 @@
-class HaversineAngle < CVariable
+class HaversineAngle < AngularDistance
   attr_accessor :latitude_one, :latitude_two, :longitude_one, :longitude_two
 
   def initialize(args={})
@@ -25,7 +25,7 @@ class HaversineAngle < CVariable
   end
 
   def sin_of_latitude
-    ((Math.sin(latitude_in_radians / 2) ** 2))
+    (Math.sin(latitude_in_radians / 2) ** 2)
   end
 
   def cosine_of_latitude_one
