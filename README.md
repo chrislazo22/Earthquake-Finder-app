@@ -9,3 +9,5 @@
    - longitude_in_radians
    - cosine_of_latitude_one
    - cosine_of_latitude_two
+   - haversine angle
+   - Design change: Changed the class name to HaversineAngle (was Distance)

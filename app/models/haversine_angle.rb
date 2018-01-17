@@ -1,4 +1,4 @@
-class HaversineAngle
+class HaversineAngle < CVariable
   attr_accessor :latitude_one, :latitude_two, :longitude_one, :longitude_two
 
   def initialize(args={})
