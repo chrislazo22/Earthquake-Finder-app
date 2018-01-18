@@ -13,4 +13,6 @@
    - Design change: Changed the class name to HaversineAngle (was Distance)
    - added c variable model class with appropriate methods
    - Using class inheritance, may switch to modules
-   - Added distance model class 
+   - Added distance model class
+
+   - CSV parser (New model Earthquake)

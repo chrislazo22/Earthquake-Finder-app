@@ -1,0 +1,2 @@
+class EarthquakeLocation < ApplicationRecord
+end
