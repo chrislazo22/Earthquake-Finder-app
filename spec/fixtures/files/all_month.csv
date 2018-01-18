@@ -1,0 +1,30 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2018-01-18T03:03:54.410Z,37.5306664,-118.8328323,-1.93,1.58,md,19,153,0.05933,0.03,nc,nc72955485,2018-01-18T03:09:03.621Z,"14km WSW of Toms Place, CA",earthquake,0.26,0.53,0.13,18,automatic,nc,nc
+2018-01-18T03:02:46.860Z,34.2275,-117.4481667,13.04,1.33,ml,48,34,0.04772,0.21,ci,ci38088968,2018-01-18T03:06:31.197Z,"4km W of Devore, CA",earthquake,0.27,0.51,0.219,27,automatic,ci,ci
+2018-01-18T02:47:47.955Z,59.895,-136.569,0,4.5,ml,,,,1.03,ak,ak18088608,2018-01-18T03:03:00.803Z,"85km NW of Skagway, Alaska",earthquake,,0.8,,,automatic,ak,ak
+2018-01-18T02:45:29.300Z,37.2728348,-121.6490021,4.15,1.65,md,10,87,0.02369,0.04,nc,nc72955475,2018-01-18T02:58:02.557Z,"16km N of Morgan Hill, CA",earthquake,0.34,1.05,0.21,9,automatic,nc,nc
+2018-01-18T02:44:09.690Z,38.8293343,-122.8068314,1.34,0.88,md,11,87,0.006449,0.03,nc,nc72955470,2018-01-18T02:52:04.539Z,"7km NW of The Geysers, CA",earthquake,0.26,0.68,,1,automatic,nc,nc
+2018-01-18T02:41:47.910Z,37.2731667,-121.6529999,5.18,3.04,ml,82,60,0.0214,0.06,nc,nc72955465,2018-01-18T03:05:30.984Z,"16km N of Morgan Hill, CA",earthquake,0.11,0.32,0.198,18,reviewed,nc,nc
+2018-01-18T02:07:27.740Z,38.7352,-119.2418,9.5,1.3,ml,8,114.07,0.252,,nn,nn00618660,2018-01-18T02:08:54.235Z,"10km ESE of Smith Valley, Nevada",earthquake,,,,,automatic,nn,nn
+2018-01-18T02:05:03.328Z,41.9002,-119.6213,1.1,2.5,ml,7,77.98,0.139,0.2414,nn,nn00618659,2018-01-18T02:53:45.472Z,"68km ESE of Lakeview, Oregon",earthquake,,3,0.3,5,reviewed,nn,nn
+2018-01-18T01:59:56.580Z,38.8283348,-122.856163,1.84,1.32,md,10,96,0.01517,0.02,nc,nc72955460,2018-01-18T02:09:03.458Z,"10km WNW of The Geysers, CA",earthquake,0.3,0.77,0.22,2,automatic,nc,nc
+2018-01-18T01:54:07.886Z,38.7345,-119.2395,7.6,1.3,ml,13,75.86,0.251,0.1119,nn,nn00618656,2018-01-18T02:11:56.418Z,"10km ESE of Smith Valley, Nevada",earthquake,,2.7,1.2,6,reviewed,nn,nn
+2018-01-18T01:51:01.640Z,27.5921,142.276,31.07,5,mb,,160,0.501,1.06,us,us2000ckm2,2018-01-18T02:02:52.040Z,"56km N of Chichi-shima, Japan",earthquake,8.5,4.3,0.151,14,reviewed,us,us
+2018-01-18T01:09:09.890Z,38.8268318,-122.8233337,1.35,0.56,md,8,132,0.01091,0.04,nc,nc72955440,2018-01-18T01:18:02.343Z,"8km NW of The Geysers, CA",earthquake,0.44,1.05,,1,automatic,nc,nc
+2018-01-18T00:59:39.050Z,44.1094,-69.8265,5.05,1.8,ml,,203,0.546,0.39,us,us2000cklx,2018-01-18T01:28:30.040Z,"3km NW of Richmond, Maine",earthquake,2.4,6.6,0.115,10,reviewed,us,us
+2018-01-18T00:47:39.210Z,44.1193,-69.804,2.35,1.9,ml,,168,0.456,0.37,us,us2000ckln,2018-01-18T02:47:22.871Z,"3km N of Richmond, Maine",earthquake,2.4,5.4,0.105,12,reviewed,us,us
+2018-01-18T00:40:41.580Z,38.8068352,-122.8161697,2.79,1.87,md,25,77,0.01721,0.03,nc,nc72955430,2018-01-18T02:12:03.463Z,"6km WNW of The Geysers, CA",earthquake,0.2,0.4,0.22,7,automatic,nc,nc
+2018-01-18T00:40:38.540Z,38.8126678,-122.8205032,2.49,1.92,md,9,151,0.007767,0.04,nc,nc72955435,2018-01-18T02:01:03.439Z,"7km NW of The Geysers, CA",earthquake,0.5,0.61,0.12,4,automatic,nc,nc
+2018-01-18T00:30:51.960Z,33.8681667,-117.7195,3.13,0.97,ml,23,82,0.07032,0.15,ci,ci38088936,2018-01-18T00:44:12.380Z,"9km ESE of Yorba Linda, CA",earthquake,0.22,0.32,0.167,13,reviewed,ci,ci
+2018-01-18T00:27:19.640Z,37.5651667,-118.8271667,2.77,0.63,md,12,284,0.02486,0.04,nc,nc72955425,2018-01-18T02:43:01.514Z,"13km W of Toms Place, CA",earthquake,1.17,0.89,0.16,11,reviewed,nc,nc
+2018-01-17T23:55:18.470Z,33.9811667,-116.442,7.15,1.15,ml,39,46,0.04893,0.13,ci,ci38088928,2018-01-18T00:39:56.500Z,"6km ENE of Desert Hot Springs, CA",earthquake,0.21,0.37,0.158,26,reviewed,ci,ci
+2018-01-17T23:53:28.390Z,19.3953342,-155.2299957,0.67,2.41,ml,10,312,0.03276,0.12,hv,hv70016487,2018-01-18T01:20:47.041Z,"4km SSE of Volcano, Hawaii",earthquake,0.65,0.63,4.2,3,automatic,hv,hv
+2018-01-17T23:46:59.220Z,44.06,-69.7455,2.26,2.6,mb_lg,,133,0.508,0.5,us,us2000ckk1,2018-01-18T03:05:55.129Z,"5km SE of Richmond, Maine",earthquake,3.2,8,0.142,13,reviewed,us,us
+2018-01-17T23:36:13.720Z,36.5563333,-121.1488333,8.75,1.67,md,27,54,0.03803,0.08,nc,nc72955405,2018-01-18T01:29:03.362Z,"3km N of Pinnacles, CA",earthquake,0.22,0.48,0.267,23,reviewed,nc,nc
+2018-01-17T23:35:38.580Z,37.6358333,-118.9261667,1.99,0.29,md,9,105,0.02089,0.03,nc,nc72955415,2018-01-18T00:07:39.965Z,"5km E of Mammoth Lakes, CA",earthquake,0.54,1.11,0.303,8,reviewed,nc,nc
+2018-01-17T23:24:14.290Z,33.4848333,-116.79,4.25,0.49,ml,21,97,0.09162,0.12,ci,ci38088912,2018-01-18T00:34:37.808Z,"8km NE of Aguanga, CA",earthquake,0.22,0.43,0.086,14,reviewed,ci,ci
+2018-01-17T23:20:42.330Z,33.482,-116.7895,4.19,1.34,ml,46,33,0.09392,0.14,ci,ci38088904,2018-01-17T23:51:23.970Z,"8km ENE of Aguanga, CA",earthquake,0.13,0.36,0.135,25,reviewed,ci,ci
+2018-01-17T23:18:59.610Z,19.4201667,-155.6075,-1.33,0.65,md,7,130,0.02569,0.08,hv,hv70016422,2018-01-18T00:25:40.340Z,"27km E of Honaunau-Napoopoo, Hawaii",earthquake,0.43,0.61,0.065,4,reviewed,hv,hv
+2018-01-17T23:06:38.610Z,19.3831667,-155.2416667,1.8,1.57,md,25,84,0.009397,0.08,hv,hv70016407,2018-01-18T00:12:23.040Z,"5km S of Volcano, Hawaii",earthquake,0.19,0.2,0.148,5,reviewed,hv,hv
+2018-01-17T23:01:30.080Z,33.5115,-116.797,4.67,0.5,ml,22,58,0.07332,0.1,ci,ci38088888,2018-01-17T23:45:30.097Z,"10km NE of Aguanga, CA",earthquake,0.18,0.33,0.067,8,reviewed,ci,ci
+2018-01-17T22:57:45.938Z,61.4921,-146.3656,35.2,1.7,ml,,,,0.62,ak,ak18086069,2018-01-17T23:01:28.514Z,"40km N of Valdez, Alaska",earthquake,,0.7,,,automatic,ak,ak

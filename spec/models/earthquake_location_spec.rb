@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe EarthquakeLocation, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let (:quake_location) { EarthquakeLocation.new }
+
+  describe "Initialization" do
+    it "is valid with the correct attributes" do
+      expect(quake_location).to be_truthy
+    end
+  end
 end
