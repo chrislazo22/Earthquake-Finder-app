@@ -2,12 +2,14 @@ class EarthquakeLocation < ApplicationRecord
   require 'csv'
   require 'open-uri'
 
-  # url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv"
-  # url_data = open(url)
-  csv_text = File.open("spec/fixtures/files/all_month.csv")
+  url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv"
+  url_data = open(url)
 
   def csv_parser
-    CSV.foreach(csv_text, :headers => true) do |row|
+    EarthquakeLocation.delete_all
+    
+    CSV.foreach(url_data, :headers => true) do |row|
+
       time = row["time"]
       latitude = row["latitude"].to_f
       longitude = row["longitude"].to_f.abs
@@ -18,6 +20,7 @@ class EarthquakeLocation < ApplicationRecord
                                   :latitude => row["latitude"],
                                   :longitude => row["longitude"],
                                   :mag => row["mag"])
+        break if EarthquakeLocation.count >= 10
       end
     end
   end
