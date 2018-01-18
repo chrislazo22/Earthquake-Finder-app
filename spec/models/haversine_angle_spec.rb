@@ -1,10 +1,8 @@
 require "rails_helper"
 
 RSpec.describe HaversineAngle do
-  let(:latitude) { HaversineAngle.new(latitude_one: 34.052200,
-                                latitude_two: 38.805500) }
-  let(:longitude) { HaversineAngle.new(longitude_one: 118.2437,
-                                 longitude_two: 122.7623367) }
+  let(:latitude) { HaversineAngle.new(latitude_two: 38.805500) }
+  let(:longitude) { HaversineAngle.new(longitude_two: 122.7623367) }
   let(:angle) { HaversineAngle.new(latitude_one: 34.052200,
                              latitude_two: 38.805500,
                              longitude_one: 118.2437,

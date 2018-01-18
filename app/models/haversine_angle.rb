@@ -2,9 +2,9 @@ class HaversineAngle < AngularDistance
   attr_accessor :latitude_one, :latitude_two, :longitude_one, :longitude_two
 
   def initialize(args={})
-    @latitude_one = args[:latitude_one]
+    @latitude_one = 34.052200
     @latitude_two = args[:latitude_two]
-    @longitude_one = args[:longitude_one]
+    @longitude_one = 118.2437
     @longitude_two = args[:longitude_two]
   end
 

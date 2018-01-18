@@ -9,10 +9,11 @@
    - longitude_in_radians
    - cosine_of_latitude_one
    - cosine_of_latitude_two
-   - haversine angle
+   - Haversine angle
    - Design change: Changed the class name to HaversineAngle (was Distance)
    - added c variable model class with appropriate methods
    - Using class inheritance, may switch to modules
    - Added distance model class
 
-   - CSV parser (New model Earthquake)
+   - CSV parser (New model Earthquake list attributes)
+   - CSV only reads headers that match attributes
