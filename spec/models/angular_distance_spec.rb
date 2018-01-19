@@ -1,11 +1,10 @@
 require "rails_helper"
 
-RSpec.describe AngularDistance do
+RSpec.describe Distance do
   let(:angle) { HaversineAngle.new(latitude_one: 34.052200,
                              latitude_two: 38.805500,
                              longitude_one: 118.2437,
                              longitude_two: 122.7623367) }
-  let(:angular_distance) { AngularDistance.new }
 
   describe "c varibale" do
     it "calculates the square root of haversine angle" do

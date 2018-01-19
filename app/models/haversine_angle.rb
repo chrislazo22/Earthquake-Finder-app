@@ -1,4 +1,4 @@
-class HaversineAngle < AngularDistance
+class HaversineAngle < Distance
   attr_accessor :latitude_one, :latitude_two, :longitude_one, :longitude_two
 
   def initialize(args={})

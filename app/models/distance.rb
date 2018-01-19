@@ -1,4 +1,4 @@
-class AngularDistance
+class Distance
   EARTHS_RADIUS_IN_MILES = 3959
 
   def sqrt_of_hav_angle
