@@ -10,5 +10,6 @@ class StaticController < ApplicationController
   end
 
   def index
+    @earthquakes = EarthquakeLocation.all 
   end
 end
