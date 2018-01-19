@@ -26,4 +26,15 @@ RSpec.describe AngularDistance do
       expect(angle.angular_distance).to eq(@angular_distance)
     end
   end
+
+  describe "distance" do
+    before do
+      @earths_radius_in_miles = 3959
+    end
+
+    it "calculates the distance between two points" do
+      @distance = @earths_radius_in_miles * angle.angular_distance
+      expect(angle.distance_in_miles).to eq(@distance)
+    end
+  end
 end

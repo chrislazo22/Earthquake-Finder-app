@@ -17,3 +17,6 @@
 
    - CSV parser (New model Earthquake list attributes)
    - CSV only reads headers that match attributes
+
+   - Front end
+   - add static controller  
