@@ -1,16 +1,16 @@
 class EarthquakeLocation < ApplicationRecord
   require "csv"
   require "open-uri"
-  attr_accessor :user_start_date, :user_end_date, :earthquake_date, :latitude,
-                :longitude, :magnitude
+  attr_accessor :user_start_date, :user_end_date, :earthquake_date, :earthquake_latitude,
+                :earthquake_longitude, :magnitude
 
   def earthquake_data(args={})
-    @user_start_date  = Date.parse(args[:user_start_date])
-    @user_end_date    = Date.parse(args[:user_end_date])
-    @earthquake_date  = Date.parse(args[:earthquake_date])
-    @latitude         = args[:latitude].to_f
-    @longitude        = args[:longitude].to_f.abs
-    @magnitude        = args[:mag].to_f
+    @user_start_date      = Date.parse(args[:user_start_date])
+    @user_end_date        = Date.parse(args[:user_end_date])
+    @earthquake_date      = Date.parse(args[:earthquake_date])
+    @earthquake_latitude  = args[:earthquake_latitude].to_f
+    @earthquake_longitude = args[:earthquake_longitude].to_f.abs
+    @magnitude            = args[:mag].to_f
   end
 
   def csv_parser(start_date, end_date)
@@ -20,16 +20,18 @@ class EarthquakeLocation < ApplicationRecord
       earthquake_data(user_start_date: start_date,
                       user_end_date: end_date,
                       earthquake_date: row["time"],
-                      latitude: row["latitude"],
-                      longitude: row["longitude"].to_f.abs,
+                      earthquake_latitude: row["latitude"],
+                      earthquake_longitude: row["longitude"].to_f.abs,
                       mag: row["mag"].to_f)
 
       if between_user_dates?(user_start_date, user_end_date) &&
-         earthquake_distance(magnitude) > distance_from_los_angeles(latitude, longitude)
+        earthquake_distance(magnitude) > distance_from_los_angeles(earthquake_latitude, earthquake_longitude)
+        
         EarthquakeLocation.create!(:time => row["time"],
-                                  :latitude => row["latitude"],
-                                  :longitude => row["longitude"],
-                                  :mag => row["mag"])
+                                   :latitude => row["latitude"],
+                                   :longitude => row["longitude"],
+                                   :mag => row["mag"])
+
         break if EarthquakeLocation.count >= 10
       end
     end
@@ -39,9 +41,9 @@ class EarthquakeLocation < ApplicationRecord
     earthquake_date.between?(user_start_date, user_end_date)
   end
 
-  def distance_from_los_angeles(latitude, longitude)
-    HaversineAngle.new(latitude_two: latitude,
-                       longitude_two: longitude).distance_in_miles
+  def distance_from_los_angeles(earthquake_latitude, earthquake_longitude)
+    HaversineAngle.new(latitude_two: earthquake_latitude,
+                       longitude_two: earthquake_longitude).distance_in_miles
   end
 
   def earthquake_distance(magnitude)
