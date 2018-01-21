@@ -27,10 +27,10 @@ class EarthquakeLocation < ApplicationRecord
       if between_user_dates?(user_start_date, user_end_date) &&
         earthquake_distance(magnitude) > distance_from_los_angeles(earthquake_latitude, earthquake_longitude)
 
-        EarthquakeLocation.create!(time: :row["time"],
-                                   latitude: :row["latitude"],
-                                   longitude: :row["longitude"],
-                                   mag: :row["mag"])
+        EarthquakeLocation.create!(time: row["time"],
+                                   latitude: row["latitude"],
+                                   longitude: row["longitude"],
+                                   mag: row["mag"])
 
         break if EarthquakeLocation.count >= 10
       end
