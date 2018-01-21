@@ -1,11 +1,13 @@
-<h1>EARTHQUAAAAAAAKKEEEE!!!!</h1>
+<div>
+  <%= form_tag(action: :create, method: "post") do %>
+    <h3>Start Date</h3>
+    <%= date_field_tag(:start_date, Date.today - 30) %>
 
-<%= form_tag(action: :create, method: "post") do %>
-  <h3>Start Date</h3>
-  <%= date_field_tag(:start_date) %>
+    <h3>End Date</h3>
+    <%= date_field_tag(:end_date, Date.today, max: Date.today) %>
 
-  <h3>End Date</h3>
-  <%= date_field_tag(:end_date) %>
-
-  <%= submit_tag "Create" %>
-<% end %>
+  <div class="waves-effect waves-light btn">
+    <%= submit_tag "Locate" %>
+  </div>
+  <% end %>
+</div>
