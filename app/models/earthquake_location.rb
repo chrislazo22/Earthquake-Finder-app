@@ -5,7 +5,7 @@ class EarthquakeLocation < ApplicationRecord
                 :earthquake_longitude, :magnitude
 
   reverse_geocoded_by :latitude, :longitude
-  after_validation :reverse_geocode  # auto-fetch address
+  after_validation :reverse_geocode
 
   def earthquake_data(args={})
     @user_start_date      = Date.parse(args[:user_start_date])
