@@ -16,9 +16,9 @@
   <tbody>
     <% @earthquakes.each do |earthquake| %>
       <tr>
-        <td><%= Time.parse(earthquake.time).strftime("%I:%M") %></td>
+        <td><%= Time.parse(earthquake.time).strftime("%I:%M %p") %></td>
         <td><%= Date.parse(earthquake.time).strftime("%b %d, %Y") %></td>
-        <td><%= earthquake.latitude %></td>
+        <td><%= earthquake.city_and_state(earthquake.latitude, earthquake.longitude) %></td>
         <td><%= earthquake.mag %></td>
         <td><%= earthquake.distance_from_los_angeles(earthquake.latitude, earthquake.longitude.abs).round(2) %></td>
       </tr>

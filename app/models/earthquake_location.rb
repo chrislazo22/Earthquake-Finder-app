@@ -1,8 +1,11 @@
 class EarthquakeLocation < ApplicationRecord
   require "csv"
   require "open-uri"
-  attr_accessor :user_start_date, :user_end_date, :earthquake_date, :earthquake_latitude,
+  attr_accessor :address, :user_start_date, :user_end_date, :earthquake_date, :earthquake_latitude,
                 :earthquake_longitude, :magnitude
+
+  reverse_geocoded_by :latitude, :longitude
+  after_validation :reverse_geocode  # auto-fetch address
 
   def earthquake_data(args={})
     @user_start_date      = Date.parse(args[:user_start_date])
@@ -48,6 +51,12 @@ class EarthquakeLocation < ApplicationRecord
 
   def earthquake_distance(magnitude)
     magnitude * 100
+  end
+
+  def city_and_state(earthquake_latitude, earthquake_longitude)
+    geo_localization = "#{earthquake_latitude},#{earthquake_longitude}"
+    address = Geocoder.search(geo_localization).first
+    result = "#{address.city}, #{address.state}"
   end
 
   private
