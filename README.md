@@ -1,7 +1,5 @@
 # Earthquake Locator
 
-This application is a coding challenge that was created for Fullscreen Media.
-
 The Earthquake Locator application is designed to find the first 10 earthquakes, within a specified date range, that can be felt at 34.0522° N and 118.2437° W in Los Angeles.
 
 ## Getting Started
